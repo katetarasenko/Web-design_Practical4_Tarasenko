@@ -1,0 +1,32 @@
+body {
+    margin: 0; 
+    padding: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    padding: 20px; 
+}
+
+.top-left-image {
+    float: left; 
+    width: 150px;
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.text-container {
+    overflow: auto; 
+}
+
+h1 {
+    margin: 0; 
+}
+
+h2 {
+    margin-top: 20px; 
+}
+
+p {
+    margin: 10px 0; 
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="aboutstyle.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>My Portfolio</h1>
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li> 
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <!-- Color Stripe Section -->
+        <div class="color-stripe">
+            <div class="left-logo">
+                <img src="images/logo.PNG" alt="Portfolio Logo" class="logo-img">
+                <h2>ABOUT ME</h2> 
+                <p>Hello! I am an artist. Art is not just a hobby; it's a person's passion.</p>
+                <p>To learn more about my background, see my resume below.</p>
+            </div>
+             <!-- Buttons Container (Resume and Chat) -->
+        <div class="button-container">
+            <div class="my-button">
+                <button onclick="location.href='Resume.html'">See my Resume</button>
+            </div>
+            <div class="chat-button" id="chat-btn">Chat</div>
+        </div>
+        </div>
+
+
+        <!-- Chat Box Section -->
+        <div class="chat-container" id="chat-container">
+            <div id="chat-box" class="chat-box">
+                <div class="chat-header">
+                    <h3>Chat with Me</h3>
+                    <button id="clear-btn">Clear Chat</button>
+                    <span id="close-btn">&times;</span>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will appear here -->
+                </div>
+                <div class="chat-input-section">
+                    <input type="text" id="chat-input" placeholder="Type your message here..." />
+                    <button id="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© 2024 My Portfolio. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

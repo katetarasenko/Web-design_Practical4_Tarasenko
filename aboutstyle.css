@@ -1,0 +1,173 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    font-family: 'Cornerstone', serif; 
+    font-size: 16px;                       
+    color: white;  
+    width: 100%;   
+    z-index: 1000; 
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+.logo-container {
+    position: relative;
+}
+
+.left-logo img {
+    margin: 0;
+    padding: 0;
+    width: 410px;   
+    height: 410px;  
+
+}
+.color-stripe {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(124, 25, 25); 
+    height: 400px;              
+}
+
+.my-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(214, 214, 227);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.my-button button:hover {
+    background-color: rgb(9, 9, 12);
+}
+body {
+    margin: 0; 
+    padding: 0; 
+}
+
+.content {
+    min-height: 200vh; 
+    padding: 20px; 
+    background-color: #f4f4f4; 
+}
+.chat-button {
+    position: fixed;
+    position: fixed;
+    bottom: 20px;  /* Ensures it stays above the footer */
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #c61d47;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1001;  /* Set higher than the footer */
+}
+
+/* Hidden Chat Box */
+.chat-container {
+    display: none; /* Hidden initially */
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 101;
+}
+
+/* Chat Box Header */
+.chat-header {
+    background-color: #911616;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Close button */
+#close-btn {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Chat Messages */
+.chat-box {
+    padding: 10px;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+}
+
+/* Chat Input and Button */
+.chat-input-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-input-section input {
+    width: 75%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-input-section button {
+    padding: 6px 12px;
+    background-color: #6b161c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-input-section button:hover {
+    background-color: #7e1010;
+}
+
+/* Hide chat container when clicked outside */
+body.hidden-chat #chat-container {
+    display: none;
+}
+.footer {
+    position: relative; /* Not fixed to allow flow */
+    background-color: #000000; 
+    color: rgb(240, 233, 233); 
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+.content {
+    min-height: 100vh; /* Set a smaller minimum height */
+    padding: 20px;
+    background-color: #e5dada;
+}
